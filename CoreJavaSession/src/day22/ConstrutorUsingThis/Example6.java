@@ -1,0 +1,30 @@
+package day22.ConstrutorUsingThis;
+
+
+public class Example6 {
+	int num;
+	Example6(){
+		this(25,25.36f);
+		System.out.println("I am zero-param cons...");
+	}
+	Example6(int num){
+		System.out.println("I am int-param cons...");
+	}
+	Example6(int num,float x){
+		this(25);
+		System.out.println("I am int-float-param cons...");
+	}
+	public static void main(String[] args) {
+		System.out.println("Program starts");
+		Example6 ref1=new Example6();
+		System.out.println("Program ends");
+	}	
+	
+
+}
+/*
+this() statement:
+	current class instance
+	its used to call another constructor of current class based on the parameter
+	it should be the 1st statement inside the constructor body
+*/
