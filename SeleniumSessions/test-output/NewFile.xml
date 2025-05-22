@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name='suite'>
+
+	<test>
+			<classes>
+				<class name="day19.TestNG.Example5"/>
+				
+			</classes>
+	</test>
+</suite>
